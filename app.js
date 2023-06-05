@@ -17,6 +17,6 @@ app.get("/ip", (req, res) => {
   });
 });
 
-app.listen(8080, "0.0.0.0", () => {
+app.listen(80, "0.0.0.0", () => {
   console.log("Server is running");
 });
