@@ -7,13 +7,14 @@ app.get("/", (req, res) => {
 });
 
 app.get("/ip", (req, res) => {
-  let { ip, hostname } = req;
-  let clientIp = getClientIp(req);
+  let { ip, clientIp, hostname } = req;
+  let getClientIp = getClientIp(req);
 
   res.json({
     hostname,
     ip,
     clientIp,
+    getClientIp,
   });
 });
 
